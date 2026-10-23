@@ -171,7 +171,6 @@ codemind/ (in progress)</span>
       </form>
     </div>
   </section>
-  <footer class="wrap"><span>© ${new Date().getFullYear()} ${esc(PERSON.name)}</span><span class="mono">Built by hand. Dark and light themes. Keyboard friendly.</span></footer>`;
 }
 
 function caseHTML(p){
