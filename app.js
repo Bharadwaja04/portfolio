@@ -170,7 +170,7 @@ codemind/ (in progress)</span>
         <div id="draft" hidden></div>
       </form>
     </div>
-  </section>
+  </section>`;
 }
 
 function caseHTML(p){
@@ -325,7 +325,7 @@ route();
     const t = e.target, overField = t.closest && t.closest("input,textarea,select");
     cur.style.display = overField ? "none" : "";
     cur.classList.toggle("hot", !!(t.closest && t.closest("a,button,summary,label")));
-    if(Math.hypot(mx-lx,my-ly)>14 && !overField){ spawn(mx,my); lx = mx; ly = my; if(!running){ running = true; requestAnimationFrame(frame); } }
+    
   }, {passive:true});
   document.addEventListener("mouseleave", ()=>cur.classList.remove("on"));
 })();
